@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wxyzipa</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div id="container">
+    <header>
+      <a href="/" id="logo"></a>
+      <nav>
+        <ul id="top_nav">
+          <li id="home_icon" class="icon"><a href="#"><img src="/assets/home_icon.gif"></a></li>
+          <li class="icon"><a href="#"><img src="/assets/contact_icon.gif"></a></li>
+        </ul>
+      </nav>
+      <nav>
+        <ul id="menu">
+          <li><a>HOME</a></li>
+          <li><a>INTRO</a></li>
+          <li><a>ACTIVITIES</a></li>
+          <li><a>WORKS</a></li>
+          <li><a>MEMBERS</a></li>
+          <li><a>CONTACTS</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <%= yield %>
+
+    <footer>
+      <small>Copyright 2014 Information & Photography Association. All Rights Reserved.</small>
+    </footer>
+
+  </div>
+</body>
+</html>
