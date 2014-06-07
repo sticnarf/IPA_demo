@@ -7,13 +7,13 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div id="container">
+  <div class="body">
     <header>
       <a href="/" id="logo"></a>
       <nav>
         <ul id="top_nav">
           <li id="home_icon" class="icon"><a href="#"><img src="/assets/home_icon.gif"></a></li>
-          <li class="icon"><a href="#"><img src="/assets/contact_icon.gif"></a></li>
+          <li class="icon"><a href="#"><img src="/assets/contact_icon.gif" /></a></li>
         </ul>
       </nav>
       <nav>
@@ -28,7 +28,9 @@
       </nav>
     </header>
 
-    <%= yield %>
+    <div class="container">
+      <%= yield %>
+    </div>
 
     <footer>
       <small>Copyright 2014 Information & Photography Association. All Rights Reserved.</small>
