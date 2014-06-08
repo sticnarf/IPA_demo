@@ -2,7 +2,7 @@
   font-family: 'Pacifico';
   font-style: normal;
   font-weight: 400;
-  src: local('Pacifico Regular'), local('Pacifico-Regular'), url(/assets/pacifico.woff) format('woff');
+  src: local('Pacifico Regular'), local('Pacifico-Regular'), url('<%= asset_path("pacifico.woff") %>') format('woff');
 }
 @import url(http://www.youziku.com/webfont/CSS/f30b5da6c79d9fd0f0337f101eebf5b6);
 body {
@@ -37,7 +37,7 @@ header {
 }
 
 #logo {
-  background: url("/assets/logo.gif") no-repeat scroll 0 0 / 100% 100% rgba(0, 0, 0, 0);
+  background: url("<%= asset_path('logo.gif') %>") no-repeat scroll 0 0 / 100% 100% rgba(0, 0, 0, 0);
   display: block;
   height: 138px;
   width: 160px;
