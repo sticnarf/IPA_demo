@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Pacifico Regular'), local('Pacifico-Regular'), url(/assets/pacifico.woff) format('woff');
+}
+@import url(http://www.youziku.com/webfont/CSS/f30b5da6c79d9fd0f0337f101eebf5b6);
 body {
   background-color: #000000;
   color: #FFFFFF;
@@ -60,17 +67,22 @@ ul {
 #menu {
   color: #FFFFFF;
   float: right;
-  padding: 0px 12px 20px 0;
+  padding: 0 12px 20px 0;
   li {
     float: left;
     a {
-      &:hover, .active-menu {
+      &:hover {
         background-color: #FFC11E;
       }
       padding: 0 20px;
       height: 42px;
       line-height: 42px;
+      margin-left: 2px;
+      margin-right: 2px;
       display: block;
+    }
+    .active-menu {
+      background-color: #FFC11E;
     }
   }
 }
@@ -85,23 +97,36 @@ footer {
   width: 100%;
 }
 
-#about {
-  padding-top: 30px;
-  text-align: center;
-  h1{
-    line-height: 1px;
-    .line {
-      background-color: #646464;
-      height: 1px;
-      width: 300px;
+.about{
+  #about {
+    padding-top: 30px;
+    text-align: center;
+    h1{
+      line-height: 1px;
+      font-family: 'Pacifico';
+      .line {
+        background-color: #646464;
+        height: 1px;
+        width: 300px;
+      }
+      .left {
+        float: left;
+        margin-left: 60px;
+      }
+      .right {
+        float: right;
+        margin-right: 60px;
+      }
     }
-    .left {
-      float: left;
-      margin-left: 60px;
-    }
-    .right {
-      float: right;
-      margin-right: 60px;
-    }
+  }
+  p {
+    padding-top: 20px;
+    letter-spacing: 1px;
+    line-height: 28px;
+    width: 70%;
+    font-size: 20px;
+    margin: 0 auto;
+    font-family: Tianshi-Yanti46680;
+    color: #EAEAEA;
   }
 }

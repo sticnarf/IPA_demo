@@ -4,6 +4,7 @@
   <title>Wxyzipa</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag params[:controller] %>
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -18,12 +19,11 @@
       </nav>
       <nav>
         <ul id="menu">
-          <li><a>HOME</a></li>
-          <li><a>INTRO</a></li>
-          <li><a>ACTIVITIES</a></li>
-          <li><a>WORKS</a></li>
-          <li><a>MEMBERS</a></li>
-          <li><a>CONTACTS</a></li>
+          <li><a id="intro">INTRO</a></li>
+          <li><a id="activities">ACTIVITIES</a></li>
+          <li><a id="works">WORKS</a></li>
+          <li><a id="members">MEMBERS</a></li>
+          <li><a id="contacts">CONTACTS</a></li>
         </ul>
       </nav>
     </header>
