@@ -42,5 +42,6 @@ gem 'flexslider', '~> 2.2.0'
 
 group :production do
 	gem 'pg', '~> 0.17.1'
+	gem 'heroku_rails_deflate'
 	gem 'rails_12factor'
 end
