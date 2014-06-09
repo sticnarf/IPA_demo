@@ -1,0 +1,1 @@
+(function(){var e;e=function(){return $(".flexslider").flexslider({animation:"slide"}),$("#intro").addClass("active-menu").removeAttr("href")},$(document).ready(e),$(document).on("page:load",e)}).call(this);
