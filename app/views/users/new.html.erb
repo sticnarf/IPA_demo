@@ -1,0 +1,16 @@
+<div id="signup">
+  <h1>社员注册</h1>
+  <%= form_for @user do |f| %>
+    <%= f.label :email, "电子邮箱：" %>
+    <%= f.text_field :email %>
+
+    <%= f.label :name, "姓名：" %>
+    <%= f.text_field :name %>
+
+    <%= f.label :password, "密码：" %>
+    <%= f.password_field :password %>
+
+    <%= f.label :password_confirmation, "密码确认：" %>
+    <%= f.password_field :password_confirmation %>
+  <% end %>
+</div>
