@@ -1,1 +1,1 @@
-Rails.application.config.assets.precompile += %w( *.png *.jpg *.jpeg *.gif *.js *.woff *.ttf *.svg )
+Rails.application.config.assets.precompile += %w( *.png *.jpg *.jpeg *.gif *.js )
