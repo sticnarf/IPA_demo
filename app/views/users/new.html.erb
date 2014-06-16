@@ -1,16 +1,34 @@
 <div id="signup">
   <h1>社员注册</h1>
+  <p>
+    <% @user.errors.full_messages.each do |e| %>
+    <%= e %>
+    <% end %>
+  </p>
   <%= form_for @user do |f| %>
-    <%= f.label :email, "电子邮箱：" %>
-    <%= f.text_field :email %>
+    <%= f.label :username, "用户名：", class: "t-label" %>
+    <%= f.text_field :username %>
 
-    <%= f.label :name, "姓名：" %>
+    <%= f.label :name, "姓名：", class: "t-label" %>
     <%= f.text_field :name %>
 
-    <%= f.label :password, "密码：" %>
+    <%= f.label :password, "密码：", class: "t-label" %>
     <%= f.password_field :password %>
 
-    <%= f.label :password_confirmation, "密码确认：" %>
+    <%= f.label :password_confirmation, "密码确认：", class: "t-label" %>
     <%= f.password_field :password_confirmation %>
+
+    <%= f.label :member, "是否为社员：", class: "t-label" %>
+    <%= f.radio_button :member, 0 %>
+    <%= f.label :member, "是", value: 0 %>
+    <%= f.radio_button :member, 1, checked: true %>
+    <%= f.label :member, "否", value: 1 %>
+
+    <%= f.label :classroom, "班级：", class: "t-label classroom", id: "classroom-label" %>
+    <%= f.text_field :classroom, class: "classroom" %>
+
+    <%= f.submit "提交" %>
+
+    <%= %>
   <% end %>
 </div>
