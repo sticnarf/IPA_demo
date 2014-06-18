@@ -42,6 +42,4 @@ gem 'bcrypt', '~> 3.1.7'
 
 group :production do
 	gem 'pg', '~> 0.17.1'
-	gem 'heroku_rails_deflate'
-	gem 'rails_12factor'
 end
