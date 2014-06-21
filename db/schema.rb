@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140616131610) do
+ActiveRecord::Schema.define(version: 20140621080128) do
 
   create_table "users", force: true do |t|
     t.string   "username"
@@ -21,6 +21,10 @@ ActiveRecord::Schema.define(version: 20140616131610) do
     t.datetime "updated_at"
     t.integer  "member",          default: 1
     t.string   "classroom"
+    t.string   "remember_token"
   end
+
+  add_index "users", ["remember_token"], name: "index_users_on_remember_token"
+  add_index "users", ["username"], name: "index_users_on_username"
 
 end

@@ -12,22 +12,31 @@
       <a href="/" id="logo"></a>
       <nav>
         <ul id="top_nav">
-          <li id="home_icon" class="icon"><a href="#"><%= image_tag('home_icon.gif') %></a></li>
-          <li class="icon"><a href="#"><%= image_tag('contact_icon.gif') %></a></li>
+          <% if signed_in? %>
+          <li id="left" class="p">欢迎，<%= current_user.name %></li>
+          <li class="p"><%= link_to "登出", signout_path, method: "delete" %></li>
+          <% else %>
+          <li id="left" class="p"><%= link_to "注册", signup_path %></li>
+          <li class="p"><%= link_to "登录", signin_path %></li>
+          <% end %>
         </ul>
       </nav>
+
       <nav>
         <ul id="menu">
-          <li><a id="intro">INTRO</a></li>
+          <li><%= link_to "INTRO", root_path %></li>
           <li><a id="activities">ACTIVITIES</a></li>
           <li><a id="works">WORKS</a></li>
-          <li><a id="members">MEMBERS</a></li>
+          <li><%= link_to "MEMBERS", current_user || signin_path, id: "members" %></li>
           <li><a id="contacts">CONTACTS</a></li>
         </ul>
       </nav>
     </header>
 
     <div class="container">
+      <% flash.each do |key, value| %>
+        <%= content_tag :div, value, class: "flash flash-#{key}" %>
+      <% end %>
       <%= yield %>
     </div>
 

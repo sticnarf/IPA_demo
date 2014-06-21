@@ -10,6 +10,7 @@ class UsersController < ApplicationController
       @user.classroom = params[:user][:classroom]
     end
     if @user.save
+      sign_in @user
       redirect_to @user
     else
       render 'new'

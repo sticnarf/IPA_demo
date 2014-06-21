@@ -1,10 +1,15 @@
 <div id="signup">
   <h1>用户注册</h1>
-  <p>
-    <% @user.errors.full_messages.each do |e| %>
-    <%= e %>
-    <% end %>
-  </p>
+  <% if @user.errors.any? %>
+    <div class="form-error">
+      <p>请检查你的提交表单</p>
+      <ul>
+        <% @user.errors.full_messages.each do |e| %>
+          <li><%= e %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
   <%= form_for @user do |f| %>
     <%= f.label :username, "用户名：", class: "t-label" %>
     <%= f.text_field :username %>

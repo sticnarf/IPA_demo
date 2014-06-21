@@ -32,16 +32,40 @@ ul {
 
 #top_nav {
   float: right;
-  padding: 10px 37px 0 575px;
+  padding: 10px 37px 0 400px;
 
-  .icon {
+  a {
+    color: #DDDDDD;
+    text-decoration: none;
+    &:hover {
+      color: #FFFFFF;
+      text-decoration: underline;
+    }
+  }
+
+  .p {
     float: left;
     padding: 4px 26px 5px 26px;
   }
 
-  #home_icon {
+  #left {
     border-right: 1px solid #353535;
   }
+}
+
+.flash {
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  width: 90%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.flash-error {
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  color: #a94442;
 }
 
 #menu {
@@ -54,6 +78,8 @@ ul {
       &:hover {
         background-color: #FFC11E;
       }
+      text-decoration: none;
+      color: white;
       padding: 0 20px;
       height: 42px;
       line-height: 42px;
