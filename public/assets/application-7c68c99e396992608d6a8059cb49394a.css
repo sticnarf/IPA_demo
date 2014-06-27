@@ -1,0 +1,623 @@
+@charset "UTF-8";
+@import url(https://fonts.lug.ustc.edu.cn/css?family=Pacifico);
+/* line 2, /Users/yilin/Projects/wxyzipa/app/assets/stylesheets/custom.css.scss.erb */
+body {
+  background-color: #000000;
+  color: #FFFFFF;
+  font-family: Helvetica, Tahoma, Arial, STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif;
+}
+
+/* line 8, /Users/yilin/Projects/wxyzipa/app/assets/stylesheets/custom.css.scss.erb */
+header {
+  overflow: auto;
+  padding-bottom: 10px;
+}
+
+/* line 13, /Users/yilin/Projects/wxyzipa/app/assets/stylesheets/custom.css.scss.erb */
+.body {
+  width: 940px;
+  margin: 0 auto;
+}
+
+/* line 18, /Users/yilin/Projects/wxyzipa/app/assets/stylesheets/custom.css.scss.erb */
+#logo {
+  background: url("https://dn-ipa-public.qbox.me/publiclogo.gif") no-repeat scroll 0 0/100% 100% rgba(0, 0, 0, 0);
+  display: block;
+  height: 138px;
+  width: 160px;
+  margin-top: 10px;
+  margin-left: 30px;
+  float: left;
+}
+
+/* line 28, /Users/yilin/Projects/wxyzipa/app/assets/stylesheets/custom.css.scss.erb */
+ul {
+  list-style: none;
+}
+
+/* line 32, /Users/yilin/Projects/wxyzipa/app/assets/stylesheets/custom.css.scss.erb */
+#top_nav {
+  float: right;
+  padding: 10px 37px 0 400px;
+}
+/* line 36, /Users/yilin/Projects/wxyzipa/app/assets/stylesheets/custom.css.scss.erb */
+#top_nav a {
+  color: #DDDDDD;
+  text-decoration: none;
+}
+/* line 39, /Users/yilin/Projects/wxyzipa/app/assets/stylesheets/custom.css.scss.erb */
+#top_nav a:hover {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+/* line 45, /Users/yilin/Projects/wxyzipa/app/assets/stylesheets/custom.css.scss.erb */
+#top_nav .p {
+  float: left;
+  padding: 4px 26px 5px 26px;
+}
+/* line 50, /Users/yilin/Projects/wxyzipa/app/assets/stylesheets/custom.css.scss.erb */
+#top_nav #left {
+  border-right: 1px solid #353535;
+}
+
+/* line 55, /Users/yilin/Projects/wxyzipa/app/assets/stylesheets/custom.css.scss.erb */
+.flash {
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  width: 90%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* line 64, /Users/yilin/Projects/wxyzipa/app/assets/stylesheets/custom.css.scss.erb */
+.flash-error {
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  color: #a94442;
+}
+
+/* line 70, /Users/yilin/Projects/wxyzipa/app/assets/stylesheets/custom.css.scss.erb */
+#menu {
+  color: #FFFFFF;
+  float: right;
+  padding: 0 28px 20px 0;
+}
+/* line 74, /Users/yilin/Projects/wxyzipa/app/assets/stylesheets/custom.css.scss.erb */
+#menu li {
+  float: left;
+}
+/* line 76, /Users/yilin/Projects/wxyzipa/app/assets/stylesheets/custom.css.scss.erb */
+#menu li a {
+  text-decoration: none;
+  color: white;
+  padding: 0 20px;
+  height: 42px;
+  line-height: 42px;
+  letter-spacing: 0.5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  display: block;
+}
+/* line 77, /Users/yilin/Projects/wxyzipa/app/assets/stylesheets/custom.css.scss.erb */
+#menu li a:hover {
+  background-color: #FFC11E;
+}
+/* line 90, /Users/yilin/Projects/wxyzipa/app/assets/stylesheets/custom.css.scss.erb */
+#menu li .active-menu {
+  background-color: #FFC11E;
+}
+
+/* line 96, /Users/yilin/Projects/wxyzipa/app/assets/stylesheets/custom.css.scss.erb */
+footer {
+  border-top: 1px solid #353535;
+  color: #999999;
+  float: left;
+  margin-top: 45px;
+  padding-top: 5px;
+  width: 100%;
+}
+@font-face {
+    font-family: 'TianshiYantiYanti';
+    src: url('https://dn-ipa-public.qbox.me/fontstianshi-yanti.eot');
+    src: url('https://dn-ipa-public.qbox.me/fontstianshi-yanti.eot') format('embedded-opentype'),
+         url('https://dn-ipa-public.qbox.me/fontstianshi-yanti.woff') format('woff'),
+         url('https://dn-ipa-public.qbox.me/fontstianshi-yanti.ttf') format('truetype'),
+         url('https://dn-ipa-public.qbox.me/fontstianshi-yanti.svg') format('svg');
+}
+/* line 4, /Users/yilin/Projects/wxyzipa/app/assets/stylesheets/users.css.scss */
+#signup, #signin {
+  width: 50%;
+  margin: 0 auto;
+}
+/* line 5, /Users/yilin/Projects/wxyzipa/app/assets/stylesheets/users.css.scss */
+#signup h1, #signin h1 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+/* line 12, /Users/yilin/Projects/wxyzipa/app/assets/stylesheets/users.css.scss */
+#signup label, #signin label {
+  font-size: 20px;
+  width: 25%;
+  display: inline-block;
+}
+/* line 18, /Users/yilin/Projects/wxyzipa/app/assets/stylesheets/users.css.scss */
+#signup .t-label, #signin .t-label {
+  float: left;
+  width: 30%;
+}
+/* line 23, /Users/yilin/Projects/wxyzipa/app/assets/stylesheets/users.css.scss */
+#signup .field_with_errors input, #signin .field_with_errors input {
+  border-color: #a94442;
+  border-weight: 2px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+/* line 30, /Users/yilin/Projects/wxyzipa/app/assets/stylesheets/users.css.scss */
+#signup .form-error, #signin .form-error {
+  background-color: #fdf7f7;
+  color: #c7254e;
+  margin: 20px 0;
+  padding: 20px;
+  border-left: 3px solid #d9534f;
+  padding-bottom: 3px;
+  border-radius: 4px;
+  width: 88%;
+  margin-bottom: 40px;
+}
+/* line 40, /Users/yilin/Projects/wxyzipa/app/assets/stylesheets/users.css.scss */
+#signup .form-error p, #signin .form-error p {
+  margin: 0;
+  font-size: 1.33em;
+  font-weight: 700;
+  color: #d9534f;
+}
+/* line 46, /Users/yilin/Projects/wxyzipa/app/assets/stylesheets/users.css.scss */
+#signup .form-error ul, #signin .form-error ul {
+  list-style: initial;
+}
+/* line 51, /Users/yilin/Projects/wxyzipa/app/assets/stylesheets/users.css.scss */
+#signup #classroom-label, #signin #classroom-label {
+  margin-top: 18px;
+}
+/* line 55, /Users/yilin/Projects/wxyzipa/app/assets/stylesheets/users.css.scss */
+#signup input[type="text"], #signup input[type="password"], #signin input[type="text"], #signin input[type="password"] {
+  width: 65%;
+  height: 20px;
+  margin: 18px 0 18px 0;
+  display: block;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+/* line 67, /Users/yilin/Projects/wxyzipa/app/assets/stylesheets/users.css.scss */
+#signup input[type="radio"], #signin input[type="radio"] {
+  margin-right: 10px;
+}
+/* line 71, /Users/yilin/Projects/wxyzipa/app/assets/stylesheets/users.css.scss */
+#signup input[type="submit"], #signin input[type="submit"] {
+  display: block;
+  padding: 10px 10px 10px 10px;
+  font-size: 15px;
+  margin: 0 auto;
+  border-radius: 6px;
+  border: 0;
+  background-color: #FFFFFF;
+  width: 100px;
+  margin-top: 36px;
+}
+/* line 4, /Users/yilin/Projects/wxyzipa/app/assets/stylesheets/welcome.css.scss */
+.jumbotron {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* line 9, /Users/yilin/Projects/wxyzipa/app/assets/stylesheets/welcome.css.scss */
+.flexslider {
+  margin: 0 auto;
+}
+/* line 11, /Users/yilin/Projects/wxyzipa/app/assets/stylesheets/welcome.css.scss */
+.flexslider .flex-control-nav a {
+  background: #FFFFFF;
+}
+/* line 14, /Users/yilin/Projects/wxyzipa/app/assets/stylesheets/welcome.css.scss */
+.flexslider .flex-active {
+  background: #888888 !important;
+}
+
+/* line 20, /Users/yilin/Projects/wxyzipa/app/assets/stylesheets/welcome.css.scss */
+.about #about {
+  padding-top: 30px;
+  text-align: center;
+}
+/* line 23, /Users/yilin/Projects/wxyzipa/app/assets/stylesheets/welcome.css.scss */
+.about #about h1 {
+  line-height: 1px;
+  font-family: 'Pacifico';
+}
+/* line 26, /Users/yilin/Projects/wxyzipa/app/assets/stylesheets/welcome.css.scss */
+.about #about h1 .line {
+  background-color: #646464;
+  height: 1px;
+  width: 300px;
+}
+/* line 31, /Users/yilin/Projects/wxyzipa/app/assets/stylesheets/welcome.css.scss */
+.about #about h1 .left {
+  float: left;
+  margin-left: 60px;
+}
+/* line 35, /Users/yilin/Projects/wxyzipa/app/assets/stylesheets/welcome.css.scss */
+.about #about h1 .right {
+  float: right;
+  margin-right: 60px;
+}
+/* line 41, /Users/yilin/Projects/wxyzipa/app/assets/stylesheets/welcome.css.scss */
+.about p {
+  padding-top: 20px;
+  letter-spacing: 1.2px;
+  line-height: 32px;
+  width: 70%;
+  font-size: 20px;
+  margin: 0 auto;
+  font-family: TianshiYantiYanti;
+  color: #EAEAEA;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+
+ */
+
+/*
+ * jQuery FlexSlider v2.2.0
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author: Tyler Smith (@mbmufffin)
+ */
+/* Browser Resets
+*********************************/
+/* line 19, /Users/yilin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/flexslider-2.2.0/vendor/assets/stylesheets/flexslider.css.scss */
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus {
+  outline: none;
+}
+
+/* line 22, /Users/yilin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/flexslider-2.2.0/vendor/assets/stylesheets/flexslider.css.scss */
+.slides,
+.flex-control-nav,
+.flex-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Icon Fonts
+*********************************/
+/* Font-face Icons */
+@font-face {
+  font-family: 'flexslider-icon';
+  src: url(/assets/fonts/flexslider-icon.eot);
+  src: url(/assets/fonts/flexslider-icon.eot?#iefix) format("embedded-opentype"), url(/assets/fonts/flexslider-icon.woff) format("woff"), url(/assets/fonts/flexslider-icon.ttf) format("truetype"), url(/assets/fonts/flexslider-icon.svg#flexslider-icon) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* FlexSlider Necessary Styles
+*********************************/
+/* line 40, /Users/yilin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/flexslider-2.2.0/vendor/assets/stylesheets/flexslider.css.scss */
+.flexslider {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 41, /Users/yilin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/flexslider-2.2.0/vendor/assets/stylesheets/flexslider.css.scss */
+.flexslider .slides > li {
+  display: none;
+  -webkit-backface-visibility: hidden;
+}
+
+/* Hide the slides before the JS is loaded. Avoids image jumping */
+/* line 42, /Users/yilin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/flexslider-2.2.0/vendor/assets/stylesheets/flexslider.css.scss */
+.flexslider .slides img {
+  width: 100%;
+  display: block;
+}
+
+/* line 43, /Users/yilin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/flexslider-2.2.0/vendor/assets/stylesheets/flexslider.css.scss */
+.flex-pauseplay span {
+  text-transform: capitalize;
+}
+
+/* Clearfix for the .slides element */
+/* line 46, /Users/yilin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/flexslider-2.2.0/vendor/assets/stylesheets/flexslider.css.scss */
+.slides:after {
+  content: "\0020";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+/* line 47, /Users/yilin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/flexslider-2.2.0/vendor/assets/stylesheets/flexslider.css.scss */
+html[xmlns] .slides {
+  display: block;
+}
+
+/* line 48, /Users/yilin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/flexslider-2.2.0/vendor/assets/stylesheets/flexslider.css.scss */
+* html .slides {
+  height: 1%;
+}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+/* line 53, /Users/yilin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/flexslider-2.2.0/vendor/assets/stylesheets/flexslider.css.scss */
+.no-js .slides > li:first-child {
+  display: block;
+}
+
+/* FlexSlider Default Theme
+*********************************/
+/* line 57, /Users/yilin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/flexslider-2.2.0/vendor/assets/stylesheets/flexslider.css.scss */
+.flexslider {
+  margin: 0 0 60px;
+  background: #fff;
+  border: 4px solid #fff;
+  position: relative;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  zoom: 1;
+}
+
+/* line 58, /Users/yilin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/flexslider-2.2.0/vendor/assets/stylesheets/flexslider.css.scss */
+.flex-viewport {
+  max-height: 2000px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+/* line 59, /Users/yilin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/flexslider-2.2.0/vendor/assets/stylesheets/flexslider.css.scss */
+.loading .flex-viewport {
+  max-height: 300px;
+}
+
+/* line 60, /Users/yilin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/flexslider-2.2.0/vendor/assets/stylesheets/flexslider.css.scss */
+.flexslider .slides {
+  zoom: 1;
+}
+
+/* line 61, /Users/yilin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/flexslider-2.2.0/vendor/assets/stylesheets/flexslider.css.scss */
+.carousel li {
+  margin-right: 5px;
+}
+
+/* Direction Nav */
+/* line 64, /Users/yilin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/flexslider-2.2.0/vendor/assets/stylesheets/flexslider.css.scss */
+.flex-direction-nav {
+  *height: 0;
+}
+
+/* line 65, /Users/yilin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/flexslider-2.2.0/vendor/assets/stylesheets/flexslider.css.scss */
+.flex-direction-nav a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: -20px 0 0;
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  overflow: hidden;
+  opacity: 0;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+/* line 66, /Users/yilin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/flexslider-2.2.0/vendor/assets/stylesheets/flexslider.css.scss */
+.flex-direction-nav .flex-prev {
+  left: -50px;
+}
+
+/* line 67, /Users/yilin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/flexslider-2.2.0/vendor/assets/stylesheets/flexslider.css.scss */
+.flex-direction-nav .flex-next {
+  right: -50px;
+  text-align: right;
+}
+
+/* line 68, /Users/yilin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/flexslider-2.2.0/vendor/assets/stylesheets/flexslider.css.scss */
+.flexslider:hover .flex-prev {
+  opacity: 0.7;
+  left: 10px;
+}
+
+/* line 69, /Users/yilin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/flexslider-2.2.0/vendor/assets/stylesheets/flexslider.css.scss */
+.flexslider:hover .flex-next {
+  opacity: 0.7;
+  right: 10px;
+}
+
+/* line 70, /Users/yilin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/flexslider-2.2.0/vendor/assets/stylesheets/flexslider.css.scss */
+.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {
+  opacity: 1;
+}
+
+/* line 71, /Users/yilin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/flexslider-2.2.0/vendor/assets/stylesheets/flexslider.css.scss */
+.flex-direction-nav .flex-disabled {
+  opacity: 0 !important;
+  filter: alpha(opacity=0);
+  cursor: default;
+}
+
+/* line 72, /Users/yilin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/flexslider-2.2.0/vendor/assets/stylesheets/flexslider.css.scss */
+.flex-direction-nav a:before {
+  font-family: "flexslider-icon";
+  font-size: 40px;
+  display: inline-block;
+  content: '\f001';
+}
+
+/* line 73, /Users/yilin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/flexslider-2.2.0/vendor/assets/stylesheets/flexslider.css.scss */
+.flex-direction-nav a.flex-next:before {
+  content: '\f002';
+}
+
+/* Pause/Play */
+/* line 76, /Users/yilin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/flexslider-2.2.0/vendor/assets/stylesheets/flexslider.css.scss */
+.flex-pauseplay a {
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  opacity: 0.8;
+  z-index: 10;
+  overflow: hidden;
+  cursor: pointer;
+  color: #000;
+}
+
+/* line 77, /Users/yilin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/flexslider-2.2.0/vendor/assets/stylesheets/flexslider.css.scss */
+.flex-pauseplay a:before {
+  font-family: "flexslider-icon";
+  font-size: 20px;
+  display: inline-block;
+  content: '\f004';
+}
+
+/* line 78, /Users/yilin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/flexslider-2.2.0/vendor/assets/stylesheets/flexslider.css.scss */
+.flex-pauseplay a:hover {
+  opacity: 1;
+}
+
+/* line 79, /Users/yilin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/flexslider-2.2.0/vendor/assets/stylesheets/flexslider.css.scss */
+.flex-pauseplay a.flex-play:before {
+  content: '\f003';
+}
+
+/* Control Nav */
+/* line 82, /Users/yilin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/flexslider-2.2.0/vendor/assets/stylesheets/flexslider.css.scss */
+.flex-control-nav {
+  width: 100%;
+  position: absolute;
+  bottom: -40px;
+  text-align: center;
+}
+
+/* line 83, /Users/yilin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/flexslider-2.2.0/vendor/assets/stylesheets/flexslider.css.scss */
+.flex-control-nav li {
+  margin: 0 6px;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+
+/* line 84, /Users/yilin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/flexslider-2.2.0/vendor/assets/stylesheets/flexslider.css.scss */
+.flex-control-paging li a {
+  width: 11px;
+  height: 11px;
+  display: block;
+  background: #666;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  text-indent: -9999px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+/* line 85, /Users/yilin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/flexslider-2.2.0/vendor/assets/stylesheets/flexslider.css.scss */
+.flex-control-paging li a:hover {
+  background: #333;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* line 86, /Users/yilin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/flexslider-2.2.0/vendor/assets/stylesheets/flexslider.css.scss */
+.flex-control-paging li a.flex-active {
+  background: #000;
+  background: rgba(0, 0, 0, 0.9);
+  cursor: default;
+}
+
+/* line 88, /Users/yilin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/flexslider-2.2.0/vendor/assets/stylesheets/flexslider.css.scss */
+.flex-control-thumbs {
+  margin: 5px 0 0;
+  position: static;
+  overflow: hidden;
+}
+
+/* line 89, /Users/yilin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/flexslider-2.2.0/vendor/assets/stylesheets/flexslider.css.scss */
+.flex-control-thumbs li {
+  width: 25%;
+  float: left;
+  margin: 0;
+}
+
+/* line 90, /Users/yilin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/flexslider-2.2.0/vendor/assets/stylesheets/flexslider.css.scss */
+.flex-control-thumbs img {
+  width: 100%;
+  display: block;
+  opacity: .7;
+  cursor: pointer;
+}
+
+/* line 91, /Users/yilin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/flexslider-2.2.0/vendor/assets/stylesheets/flexslider.css.scss */
+.flex-control-thumbs img:hover {
+  opacity: 1;
+}
+
+/* line 92, /Users/yilin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/flexslider-2.2.0/vendor/assets/stylesheets/flexslider.css.scss */
+.flex-control-thumbs .flex-active {
+  opacity: 1;
+  cursor: default;
+}
+
+@media screen and (max-width: 860px) {
+  /* line 95, /Users/yilin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/flexslider-2.2.0/vendor/assets/stylesheets/flexslider.css.scss */
+  .flex-direction-nav .flex-prev {
+    opacity: 1;
+    left: 10px;
+  }
+
+  /* line 96, /Users/yilin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/flexslider-2.2.0/vendor/assets/stylesheets/flexslider.css.scss */
+  .flex-direction-nav .flex-next {
+    opacity: 1;
+    right: 10px;
+  }
+}
