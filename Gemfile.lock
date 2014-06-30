@@ -56,6 +56,7 @@ GEM
     mime-types (1.25.1)
     minitest (5.3.5)
     multi_json (1.10.1)
+    newrelic_rpm (3.9.0.229)
     polyglot (0.3.5)
     qiniu (6.2.4)
       json (~> 1.7)
@@ -129,6 +130,7 @@ DEPENDENCIES
   flexslider (~> 2.2.0)
   jbuilder (~> 2.0)
   jquery-rails
+  newrelic_rpm
   qiniu (~> 6.2.0)
   rails (= 4.1.2)
   sass-rails (~> 4.0.3)
